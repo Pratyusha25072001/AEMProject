@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Annual Report Carousel Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+<content jcr:primaryType="nt:unstructured"
+             sling:resourceType="granite/ui/components/coral/foundation/container">
+<layout jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+<items jcr:primaryType="nt:unstructured">
+<column jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+<items jcr:primaryType="nt:unstructured">
+ 
+                    <title1 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                           fieldLabel="Title1"
+                           name="./title1"
+                           required="true" />
+ 
+                    <subtitle1 jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldLabel="Subtitle1"
+                              name="./subtitle1" />
+ 
+                    <link1 jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldLabel="Button Link1"
+                          name="./link1"
+                          rootPath="/content" />
+ 
+                    <image1 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                           fieldLabel="Image1"
+                           name="./image1"
+                           rootPath="/content/dam" />
+
+
+
+                    <title2 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                           fieldLabel="Title2"
+                           name="./title2"
+                           required="true" />
+ 
+                    <subtitle2 jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldLabel="Subtitle2"
+                              name="./subtitle2" />
+ 
+                    <link2 jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldLabel="Button Link2"
+                          name="./link2"
+                          rootPath="/content" />
+ 
+                    <image2 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                           fieldLabel="Image2"
+                           name="./image2"
+                           rootPath="/content/dam" />
+
+
+
+                    <title3 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                           fieldLabel="Title3"
+                           name="./title3"
+                           required="true" />
+ 
+                    <subtitle3 jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldLabel="Subtitle3"
+                              name="./subtitle3" />
+ 
+                    <link3 jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                          fieldLabel="Button Link3"
+                          name="./link3"
+                          rootPath="/content" />
+ 
+                    <image3 jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                           fieldLabel="Image3"
+                           name="./image3"
+                           rootPath="/content/dam" />
+ 
+                </items>
+</column>
+</items>
+</content>
+</jcr:root>
