@@ -1,0 +1,106 @@
+// styles.scss
+
+// Variables for colors and spacing
+$primary-color: #2e3d49;
+$background-color: #f4f4f4;
+$button-bg-color: #4CAF50;
+$button-hover-bg-color: #45a049;
+$input-padding: 10px;
+$margin-top: 20px;
+$border-radius: 8px;
+$font-family: Arial, sans-serif;
+
+// Base styling for the body
+body {
+    font-family: $font-family;
+    margin: 20px;
+    background-color: #eef2f4;
+}
+
+// Header styling
+h1 {
+    color: $primary-color;
+    font-size: 24px;
+    text-align: center;
+}
+
+// Container for the credit card information
+#credit-card-container {
+    background-color: $background-color;
+    padding: 20px;
+    border-radius: $border-radius;
+    margin-top: $margin-top;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+        
+        strong {
+            color: $primary-color;
+        }
+    }
+}
+
+// Form section styling
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: $input-padding;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: $button-bg-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $button-hover-bg-color;
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #credit-card-container {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}

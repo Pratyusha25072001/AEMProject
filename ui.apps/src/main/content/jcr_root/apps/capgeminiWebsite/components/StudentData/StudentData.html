@@ -1,0 +1,147 @@
+<!-- <div data-sly-use.obj="com.adobe.capgemini.website.core.models.StudentMethodsImpl">
+    <div>Student Name :${obj.studentName}</div>
+    <div>Roll Number: ${obj.rollNumber}</div></div> -->
+
+
+             
+  <div class="cmp-student" data-cmp-is="studentinfo">
+        <h2 class="cmp-studenttitle">Student Details</h2>
+        <div class="cmp-studentInformation">
+            <form method="GET" action="/your-endpoint" onsubmit="event.preventDefault(); fetchStudentDetails();">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber">
+                <button type="submit">Display</button>
+            </form>
+        </div>
+        <div class="cmp-student_details" style="display: none;" id="studentDetails">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                        <th>Subject</th>
+                        <th>Grades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="studname"></span></td>
+                        <td><span id="studentMarks"></span></td>
+                        <td data-sly-repeat.subjects><span id="studentSubjects"></span></td>
+                        <td><span id="studentGrades"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+
+
+
+
+<script>
+    var STUD_DATABASE = [
+        { rollNumber: "1", studentName: "Ghanishtha", marks: 95, Subject: "Maths", Grades: "A" },
+        { rollNumber: "2", studentName: "TANU", marks: 92, Subject: "English", Grades: "B" },
+        { rollNumber: "3", studentName: "Ram", marks: 78, Subject: "Maths", Grades: "A" },
+        { rollNumber: "1", studentName: "Ghanishtha", marks: 80, Subject: "English", Grades: "A" }
+    ];
+    
+    function fetchStudentDetails() {
+        var rollNumber = document.getElementById('rollNumber').value;
+        var studentData = STUD_DATABASE.find(student => student.rollNumber === rollNumber);
+    
+        if (studentData) {
+            document.getElementById('studname').innerText = studentData.studentName;
+            document.getElementById('studentMarks').innerText = studentData.marks;
+            document.getElementById('studentSubjects').innerText = studentData.Subject;
+            document.getElementById('studentGrades').innerText = studentData.Grades;
+            var gradeCell = document.getElementById('studentGrades').parentElement;
+            var gradeClass = "grade-" + studentData.Grades;  
+            gradeCell.classList.add(gradeClass);
+            document.getElementById('studentDetails').style.display = 'block';
+        } else {
+            alert('No student found with that roll number!');
+        }
+    }
+    </script>
+
+
+    <!-- <div class="cmp-student" data-cmp-is="studentinfo">
+        <h2 class="cmp-studenttitle">Student Details</h2>
+        <div class="cmp-studentInformation">
+            <form method="GET" action="/your-endpoint" onsubmit="event.preventDefault(); fetchStudentDetails();">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber">
+                <button type="submit">Display</button>
+            </form>
+        </div>
+        <div class="cmp-student_details" style="display: none;" id="studentDetails">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                        <th>Subject</th>
+                        <th>Grades</th>
+                    </tr>
+                </thead>
+                <tbody id="studentRecords">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script>
+    var STUD_DATABASE = [
+    { rollNumber: "1", studentName: "Ghanishtha", marks: 95, Subject: "Maths", Grades: "A" },
+    { rollNumber: "2", studentName: "TANU", marks: 92, Subject: "English", Grades: "B" },
+    { rollNumber: "3", studentName: "Ram", marks: 78, Subject: "Maths", Grades: "A" },
+    { rollNumber: "1", studentName: "Ghanishtha", marks: 80, Subject: "English", Grades: "A" }
+];
+
+function fetchStudentDetails() {
+    var rollNumber = document.getElementById('rollNumber').value;
+    var studentDataList = STUD_DATABASE.filter(student => student.rollNumber === rollNumber);
+    var studentRecords = document.getElementById('studentRecords');
+    studentRecords.innerHTML = "";
+
+    if (studentDataList.length > 0) {
+        studentDataList.forEach(studentData => {
+            var row = document.createElement('tr');
+            var nameCell = document.createElement('td');
+            nameCell.innerText = studentData.studentName;
+
+            var marksCell = document.createElement('td');
+            marksCell.innerText = studentData.marks;
+
+            var subjectCell = document.createElement('td');
+            subjectCell.innerText = studentData.Subject;
+
+            var gradesCell = document.createElement('td');
+            gradesCell.innerText = studentData.Grades;
+
+            // Append cells to the row
+            row.appendChild(nameCell);
+            row.appendChild(marksCell);
+            row.appendChild(subjectCell);
+            row.appendChild(gradesCell);
+            var gradeClass = "grade-" + studentData.Grades;
+            row.classList.add(gradeClass);
+            studentRecords.appendChild(row);
+        });
+        document.getElementById('studentDetails').style.display = 'block';
+    } else {
+        alert('No student found with that roll number!');
+        document.getElementById('studentDetails').style.display = 'none';
+    }
+}
+
+</script>     -->
+
+
+    
+
+    
+

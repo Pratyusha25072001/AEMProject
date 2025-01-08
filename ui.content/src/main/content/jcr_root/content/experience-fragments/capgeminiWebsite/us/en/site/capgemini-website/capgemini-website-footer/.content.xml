@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-12-27T10:05:51.831+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/capgeminiWebsite/settings/wcm/templates/xf-web-variation"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="CAPGEMINI WEBSITE FOOTER"
+        sling:resourceType="capgeminiWebsite/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="capgeminiWebsite/components/container"
+            layout="responsiveGrid">
+            <title
+                jcr:created="{Date}2024-12-27T09:08:01.523+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-27T09:08:14.746+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="CAPGEMINI"
+                sling:resourceType="weretail/components/content/title"/>
+            <text_1980442681
+                jcr:created="{Date}2024-12-27T09:08:28.975+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-27T09:12:31.150+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="weretail/components/content/text"
+                text="&lt;p>Our brands:&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/capgemini-engineering/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Capgemini_Engineering.svg&quot; alt=&quot;Capgemini Engineering&quot; width=&quot;202&quot; height=&quot;24&quot;>&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/capgemini-invent/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Capgemini_Invent.svg&quot; alt=&quot;Capgemini Invent&quot; width=&quot;158&quot; height=&quot;24&quot;>&lt;/a>&lt;/p>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/capgemini-invent/&quot;>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/sogeti/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Sogeti.svg&quot; alt=&quot;Sogeti&quot; width=&quot;149&quot; height=&quot;24&quot;>&lt;/a>&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        behavior="newline"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </text_1980442681>
+            <text_1160545630
+                jcr:created="{Date}2024-12-27T10:05:08.874+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-12-27T10:05:08.874+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="7"
+                        width="5"/>
+                </cq:responsive>
+            </text_1160545630>
+        </root>
+    </jcr:content>
+</jcr:root>

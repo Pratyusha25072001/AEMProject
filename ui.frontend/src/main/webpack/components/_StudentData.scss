@@ -1,0 +1,190 @@
+
+.cmp-student {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+}
+
+.cmp-studenttitle {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.cmp-student_details {
+  margin-top: 30px;
+  text-align: center;
+  display: none;
+}
+
+.cmp-student_details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+}
+
+.cmp-student_details th, .cmp-student_details td {
+  padding: 10px; 
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.cmp-student_details th {
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bold;
+}
+
+.cmp-student_details td {
+  font-size: 12px; 
+  background-color: #f8f9fa;
+}
+
+
+.cmp-student_details td.grade-A {
+  background-color: green;
+  color: white;
+}
+
+.cmp-student_details td.grade-B {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.cmp-student_details td.grade-C {
+  background-color: rgb(185, 205, 147);
+}
+
+.cmp-student_details td.grade-D {
+  background-color: rgb(229, 232, 223);
+}
+
+.cmp-student_details tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.cmp-student_details tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+
+.cmp-studentInformation {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #4e73df;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cmp-studentInformation form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cmp-studentInformation label {
+  font-size: 16px;
+  color: white;
+}
+
+.cmp-studentInformation input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%; 
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cmp-studentInformation button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.cmp-studentInformation button:hover {
+  background-color: #218838;
+}
+
+
+@media screen and (min-width: 768px) {
+  .cmp-student {
+      padding: 40px;
+  }
+
+  .cmp-studenttitle {
+      font-size: 24px;
+  }
+
+  .cmp-studentInformation form {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70%;
+  }
+
+  .cmp-studentInformation label {
+      font-size: 18px;
+  }
+
+  .cmp-studentInformation input[type="text"] {
+      width: 60%;
+  }
+
+  .cmp-studentInformation button {
+      width: 25%;
+  }
+
+  .cmp-student_details table th, .cmp-student_details table td {
+      font-size: 14px; 
+      padding: 12px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .cmp-student {
+      padding: 60px;
+  }
+
+  .cmp-studenttitle {
+      font-size: 32px;
+  }
+
+  .cmp-studentInformation form {
+      width: 50%;
+  }
+
+  .cmp-studentInformation label {
+      font-size: 20px;
+  }
+
+  .cmp-studentInformation input[type="text"] {
+      width: 60%;
+  }
+
+  .cmp-studentInformation button {
+      width: 20%;
+  }
+
+  .cmp-student_details table th, .cmp-student_details table td {
+      font-size: 16px; 
+      padding: 15px;
+  }
+}

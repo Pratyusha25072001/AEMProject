@@ -1,0 +1,27 @@
+<div class="cmp-studentinfo" data-cmp-is="studentinfo">
+    <h2 class="cmp-studentinfo__title">Student Details</h2>
+    <div class="cmp-studentinfo__item">
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" value="${properties.rollNumber}">
+        <button onclick="fetchStudentDetails()">Get Details</button>
+    </div>
+    <div class="cmp-studentinfo__details" data-sly-use.model="com.adobe.capgemini.website.core.models.StudentInfoModel" data-sly-test="${model.rollNumber}">
+        <div><strong>Name:</strong> <span id="studentName">${model.name}</span></div>
+        <table class="cmp-studentinfo__table">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-sly-repeat.subjects="${model.subjects}" class="grade-${subjects.grade}">
+                    <td>${subjects.name}</td>
+                    <td>${subjects.marks}</td>
+                    <td>${subjects.grade}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2024-12-11T21:08:37.148+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/capgeminiWebsite/settings/wcm/templates/temp2"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="capgeminiWebsite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="capgeminiWebsite/components/container"
+            layout="responsiveGrid">
+            <container>
+              <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/text"
+                text="MY BLOG"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="7"/>
+                </cq:responsive>
+            </text>
+            <text_1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/text"
+                text="Welcome to the blog of unknown"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="30"/>
+                </cq:responsive>
+                     <!--style>
+                    .my-text-center {
+                    text-align: center;
+                    display: block;
+                    margin: 50 auto;
+                }
+    </style-->
+            </text_1>
+            </container>
+
+            <!-- <image_929527539
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileName="vs.jpg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="5"/>
+                </cq:responsive>
+                <file/>
+            </image_929527539>
+            <text_1518385803
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/text"
+                text="&lt;h1>About Catering&lt;/h1>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;h5>Tradition since 1889&lt;/h5>&#xd;&#xa;&lt;p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use&amp;nbsp;seasonal&amp;nbsp;ingredients.&lt;/p>&#xd;&#xa;&lt;p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        behavior="none"
+                        offset="1"
+                        width="6"/>
+                </cq:responsive>
+            </text_1518385803>
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileName="vs.jpg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+                <file/>
+            </image>
+            <article class="card">
+                <div class="card-image">
+            <image_1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileName="vs1.jpg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+                <file/>
+            </image_1>
+            </div>
+             <div class="card-text">
+        <text_2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/text"
+                text=" TITLE HEADING
+Title description, April 7, 2014
+Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </text_2>
+            </div>
+            </article>
+            <text_3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/text"
+                text=" My Name
+Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you."
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </text_3>
+            <image_2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileName="vs2.jpg">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+                <file/>
+            </image_2>
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/capgeminiWebsite/us/en/site/header/master"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <cq:responsive jcr:primaryType="nt:unstructured">
+                <default
+                    jcr:primaryType="nt:unstructured"
+                    offset="0"
+                    width="12"/>
+            </cq:responsive> -->
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

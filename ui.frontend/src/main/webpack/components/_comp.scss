@@ -1,0 +1,268 @@
+body {
+  font-family: 'Ubuntu', sans-serif; // Use Ubuntu font
+  background-color: #ececec;
+  margin: 0; // Remove default margin
+  padding: 0; // Remove default padding
+  overflow-x: hidden; // Prevent horizontal scrolling
+}
+ 
+.container {
+  background-color: #ececec;
+  font-family: 'Ubuntu', sans-serif; // Ensure the Ubuntu font is applied globally
+  width: 100%; // Set to 100% width instead of 100vw
+  margin-top: 30px;
+  box-sizing: border-box; // Prevent padding from overflowing
+  padding: 0; // Ensure no padding causes space
+}
+ 
+*, *::before, *::after {
+  box-sizing: border-box; // Include padding and borders in width/height
+}
+ 
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+ 
+  .logo-section,
+  #section2,
+  #section3 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+ 
+  .logo-section {
+    display: flex;
+    flex-direction: column; // Make the content stack vertically
+ 
+    .logo1 {
+      margin-bottom: 40px; // Space between logo1 and the brand text
+    }
+ 
+    .brand-logo {
+      .brand-text {
+        font-size: 16px;
+        margin-top: 45px; // Adjust this margin to increase space between logo and text
+        margin-left: 45px;
+      }
+ 
+      .logo-image {
+        width: 150px; // Increased logo image size
+        height: auto;
+        margin-bottom: 10px; // Add some margin if needed between images
+        margin-left: 45px;
+        margin-top: 10px;
+      }
+    }
+  }
+ 
+  .footer-section {
+    width: 100%;
+ 
+    li {
+      margin-bottom: 10px;
+ 
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 400;
+ 
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+ 
+#section2, #section3 {
+  font-family: 'Ubuntu', sans-serif;  // Apply Ubuntu font to footer sections
+  font-size: 16px;  // Set font size for both sections
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; // Add spacing between sections
+  margin-top: 30px;
+ 
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+ 
+  ul li {
+    margin-bottom: 15px;
+  }
+ 
+  a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; // Ensure consistent font size for footer links
+ 
+    &:hover {
+      color: #0073e6;  // Hover color
+    }
+  }
+}
+ 
+hr {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+ 
+.social-images {
+  display: flex;
+  flex-direction: column;
+  width: 100%; // Ensure full width
+  margin-top: 2px;
+ 
+  .social-image {
+    .social-text {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+      text-align: left; // Align text to the left
+      margin-left: 20px;
+    }
+ 
+    .social-icons {
+      display: flex;
+      justify-content: flex-end; // Align icons to the right
+      gap: 8px; // Adjust spacing between social icons
+      flex-wrap: wrap;
+      margin-top: -30px;
+ 
+      img {
+        width: 40px; // Set icon size
+        height: 40px;
+        transition: transform 0.3s ease;
+        border-radius: 45%;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: white;
+ 
+        &:hover {
+          transform: scale(1.1);
+          background-color: #2b6bb9;
+        }
+      }
+    }
+  }
+}
+ 
+@media only screen and (max-width: 1024px) {
+  .logo-image {
+    width: 100px; // Further reduce image size
+  }
+ 
+  .footer-section ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+ 
+  .social-icons img {
+    width: 30px; // Smaller icons for very small screens
+    height: 30px;
+  }
+ 
+  .social-text {
+    font-size: 14px; // Smaller text size
+    margin-left: 10px; // Adjust text margin
+  }
+ 
+  .social-images {
+    margin-top: 10px; // Reduce spacing
+  }
+}
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .logo1 {
+    margin-bottom: 10px;
+  }
+
+  .brand-logo {
+    text-align: center;
+  }
+
+  .brand-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .logo-image {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  #section2, #section3 {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #section2 ul, #section3 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  #section2 li, #section3 li {
+    margin-bottom: 8px;
+  }
+
+  #section2 a, #section3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+  }
+
+  .social-images {
+    margin-top: 20px;
+  }
+
+  .social-text {
+    font-size: 14px;
+    margin-bottom: 20px; /* Ensures consistent space in mobile view */
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 0; /* Remove any margin top that might create overlap */
+  }
+
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.1);
+    background-color: #2b6bb9;
+  }
+}
+

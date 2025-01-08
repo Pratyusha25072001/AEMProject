@@ -1,0 +1,61 @@
+<sly data-sly-use.customCard="com.adobe.capgemini.website.core.models.CustomCardModel">
+    <div class="container">
+        <!-- Top section containing logo, section2, and section3 in one row -->
+        <div class="top-section">
+            <div class="logo-section">
+                <div class="logo1">
+                    <img loading="lazy" src="${customCard.logoImage}" alt="${customCard.logoText}" class="logo-image">
+                </div>
+           
+                <div class="brand-logo">
+                    <div class="brand-text">${customCard.brandText}</div>
+                    <div><img loading="lazy" src="${customCard.logoImage1}" alt="${customCard.logoText}" class="logo-image"></div>
+                    <div><img loading="lazy" src="${customCard.logoImage2}" alt="${customCard.logoText}" class="logo-image"></div>
+                    <div><img loading="lazy" src="${customCard.logoImage3}" alt="${customCard.logoText}" class="logo-image"></div>
+                </div>
+               
+               
+            </div>
+ 
+            <div class="footer-section" id="section2">
+                <ul>
+                    <!-- Footer Link 1 to 8 -->
+                    <li><a href="${customCard.footerLink1URL}">${customCard.footerLink1Text}</a></li>
+                    <li><a href="${customCard.footerLink2URL}">${customCard.footerLink2Text}</a></li>
+                    <li><a href="${customCard.footerLink3URL}">${customCard.footerLink3Text}</a></li>
+                    <li><a href="${customCard.footerLink4URL}">${customCard.footerLink4Text}</a></li>
+                    <li><a href="${customCard.footerLink5URL}">${customCard.footerLink5Text}</a></li>
+                    <li><a href="${customCard.footerLink6URL}">${customCard.footerLink6Text}</a></li>
+                    <li><a href="${customCard.footerLink7URL}">${customCard.footerLink7Text}</a></li>
+                    <li><a href="${customCard.footerLink8URL}">${customCard.footerLink8Text}</a></li>
+                </ul>
+            </div>
+ 
+            <div class="footer-section" id="section3">
+                <ul>
+                    <!-- Footer Link 9 to 15 -->
+                    <li><a href="${customCard.footerLink9URL}">${customCard.footerLink9Text}</a></li>
+                    <li><a href="${customCard.footerLink10URL}">${customCard.footerLink10Text}</a></li>
+                    <li><a href="${customCard.footerLink11URL}">${customCard.footerLink11Text}</a></li>
+                    <li><a href="${customCard.footerLink12URL}">${customCard.footerLink12Text}</a></li>
+                    <li><a href="${customCard.footerLink13URL}">${customCard.footerLink13Text}</a></li>
+                    <li><a href="${customCard.footerLink14URL}">${customCard.footerLink14Text}</a></li>
+                    <li><a href="${customCard.footerLink15URL}">${customCard.footerLink15Text}</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="social-images">
+            <div class="social-image">
+                <div class="social-text">${customCard.FooterText}</div>
+                <div class="social-icons">
+                    <img loading="lazy" src="${customCard.SocialImage}"  class="logo-image">
+                    <img loading="lazy" src="${customCard.SocialImage1}"  class="logo-image">
+                    <img loading="lazy" src="${customCard.SocialImage2}"  class="logo-image">
+                    <img loading="lazy" src="${customCard.SocialImage3}" class="logo-image">
+                    <img loading="lazy" src="${customCard.SocialImage4}" class="logo-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

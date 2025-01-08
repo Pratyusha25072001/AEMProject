@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-01-05T15:06:49.038+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/capgeminiWebsite/settings/wcm/templates/temp1"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Capgemini Website Design"
+        sling:resourceType="capgeminiWebsite/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="capgeminiWebsite/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="capgeminiWebsite/components/container"
+                layout="responsiveGrid">
+                <title
+                    cq:styleIds="[1735553372837]"
+                    jcr:created="{Date}2024-12-27T10:17:14.587+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-27T10:23:36.763+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Capgemini"
+                    sling:resourceType="capgeminiWebsite/components/title"
+                    linkTarget="_self"
+                    linkURL="https://www.capgemini.com/#"
+                    type="h1"/>
+                <text_1459690966
+                    jcr:created="{Date}2024-12-27T10:17:52.273+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-12-27T10:20:44.389+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="capgeminiWebsite/components/text"
+                    text="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Our brands:&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/capgemini-engineering/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Capgemini_Engineering.svg&quot; alt=&quot;Capgemini Engineering&quot; width=&quot;202&quot; height=&quot;24&quot;>&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/capgemini-invent/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Capgemini_Invent.svg&quot; alt=&quot;Capgemini Invent&quot; width=&quot;158&quot; height=&quot;24&quot;>&lt;/a>&lt;/li>&#xd;&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/about-us/who-we-are/our-brands/sogeti/&quot;>&lt;img src=&quot;https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/Logo_Sogeti.svg&quot; alt=&quot;Sogeti&quot; width=&quot;149&quot; height=&quot;24&quot;>&lt;/a>&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </text_1459690966>
+                <text_1918227249
+                    jcr:created="{Date}2024-12-27T10:17:44.551+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-01-05T15:05:53.829+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="capgeminiWebsite/components/text"
+                    text="&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/insights/&quot;>Insights&lt;/a>&amp;nbsp;&amp;nbsp;&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/industries/&quot;>Industries&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/services/&quot;>Services&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/careers/&quot;>Careers&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/news/&quot;>News&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/about-us/&quot;>About us&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/contact-us/&quot;>Contact us&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://investors.capgemini.com/en/&quot;>Investors&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </text_1918227249>
+                <text
+                    jcr:created="{Date}2024-12-27T10:17:33.811+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-01-05T15:06:49.034+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="capgeminiWebsite/components/text"
+                    text="&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/accessibility/&quot;>Accessibility&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/cookie-policy/&quot;>Cookie policy&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/#&quot;>Cookie settings&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/privacy-notice/&quot;>Privacy notice&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/security-vulnerability-notification/&quot;>Security vulnerability notification&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://app.convercent.com/en-us/LandingPage/21bd0129-fee2-e611-80d9-000d3ab1117e&quot;>SpeakUp&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;&lt;ul>&#xa;&lt;li>&lt;a href=&quot;https://www.capgemini.com/terms-of-use/&quot;>Terms of use&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </text>
+                <text_1943125068
+                    jcr:created="{Date}2024-12-27T10:27:05.390+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-01-05T15:03:13.421+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="capgeminiWebsite/components/text"
+                    text="&lt;p>@Capgemini&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            behavior="newline"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </text_1943125068>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
