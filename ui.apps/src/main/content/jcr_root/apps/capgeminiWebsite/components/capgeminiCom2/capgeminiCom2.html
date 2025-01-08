@@ -1,0 +1,25 @@
+
+<div class="custom-card" data-sly-use.model="com.adobe.capgemini.website.core.models.CustomCardModel">
+
+
+    <div class="blue-card">
+        <h2 class="blue-card-title">${model.blueCardTitle}</h2>
+        <p class="blue-card-subtitle">${model.blueCardSubtitle}</p>
+    </div>
+
+
+    <div class="blue-card-button"><a href="https://www.capgemini.com/insights/">${model.blueCardButtonText}
+        <img src="	https://www.capgemini.com/wp-content/plugins/cg-blocks/assets/images/icon-more-small-dark.svg
+        " alt="Arrow Icon" style="width:16px;height: 16px; margin-left: 8px;" />
+    </a></div>
+
+     <div class="image-container">
+
+        <img src="${model.fileReference @ context='uri'}" alt="Background Image" />
+        <div class="white-card">
+            <p class="white-card-label">${model.whiteCardLabel}</p>
+            <h3 class="white-card-title">${model.whiteCardTitle}</h3>
+            <a class="white-card-link" href="#">${model.whiteCardLinkText}</a>
+        </div>
+    </div>
+</div>
