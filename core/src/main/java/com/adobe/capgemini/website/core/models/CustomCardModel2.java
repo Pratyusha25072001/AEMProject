@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
  
 @Model(adaptables = Resource.class)
-public class CustomCardModel {
+public class CustomCardModel2 {
  
     @ValueMapValue
     private String logoImage;
