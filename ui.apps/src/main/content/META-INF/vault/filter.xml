@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/capgeminiWebsite/clientlibs"/>
+    <filter root="/apps/capgeminiWebsite/components"/>
+    <filter root="/apps/capgeminiWebsite/i18n"/>
+</workspaceFilter>

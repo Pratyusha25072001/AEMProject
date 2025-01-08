@@ -1,0 +1,62 @@
+.cmp-studentinfo {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.cmp-studentinfo__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.cmp-studentinfo__item label {
+    font-weight: bold;
+}
+ 
+.cmp-studentinfo__item button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    //background-color: aquamarine;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+.cmp-studentinfo__item button:hover {
+    background-color: green;
+}
+ 
+.cmp-studentinfo__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+ 
+
+.cmp-studentinfo__table th, .cmp-studentinfo__table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+ 
+.cmp-studentinfo__table th {
+    background-color: gainsboro;
+}
+ 
+.cmp-studentinfo__table tr.grade-A {
+    background-color: green !important;
+}
+ 
+.cmp-studentinfo__table tr.grade-B {
+    background-color: yellow !important;
+}
+ 
+.cmp-studentinfo__table tr.grade-C {
+    background-color: red !important;
+}

@@ -1,0 +1,262 @@
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="comp"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+             <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+            <logoImage jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image"
+                       name="./logoImage"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."
+                       />
+
+            <brandText jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title (e.g. Our brands)"
+                        name="./brandText"
+                        size="L"
+                        style="width: 350px; margin-left: 20px;"/>
+         
+   
+            <logoImage1 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image"
+                       name="./logoImage1"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."
+                       style="margin-left: 20px;"/>
+            <logoImage2 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image"
+                       name="./logoImage2"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."
+                       style="margin-left: 20px;"/>
+            <logoImage3 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image"
+                       name="./logoImage3"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."
+                       style="margin-left: 20px;"/>
+ 
+            <footerLink1Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 1 Text"
+                             name="./footerLink1Text"
+                             style="margin-left: 20px;"/>
+            <footerLink1URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 1 URL"
+                            name="./footerLink1URL"
+                            style="margin-left: 20px;"/>
+            <footerLink2Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 2 Text"
+                             name="./footerLink2Text"
+                             style="margin-left: 20px;"/>
+            <footerLink2URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 2 URL"
+                            name="./footerLink2URL"
+                            style="margin-left: 20px;"/>
+
+            <footerLink3Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 3 Text"
+                             name="./footerLink3Text"
+                             style="margin-left: 20px;"/>
+            <footerLink3URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 3 URL"
+                             name="./footerLink3URL"
+                             style="margin-left: 20px;"/>
+            <footerLink4Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 4 Text"
+                             name="./footerLink4Text"
+                             style="margin-left: 20px;"/>
+            <footerLink4URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 4 URL"
+                             name="./footerLink4URL"
+                             style="margin-left: 20px;"/>
+ 
+            <footerLink5Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 5 Text"
+                             name="./footerLink5Text"/>
+            <footerLink5URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 5 URL"
+                             name="./footerLink5URL"/>  
+ 
+            <footerLink6Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 6 Text"
+                             name="./footerLink6Text"/>
+            <footerLink6URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 6 URL"
+                             name="./footerLink6URL"/>  
+ 
+            <footerLink7Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 7 Text"
+                             name="./footerLink7Text"/>
+            <footerLink7URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 7 URL"
+                             name="./footerLink7URL"/>  
+ 
+            <footerLink8Text jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                             fieldLabel="Footer Link 8 Text"
+                             name="./footerLink8Text"/>
+            <footerLink8URL jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Footer Link 8 URL"
+                             name="./footerLink8URL"/>  
+ 
+            <footerLink9Text jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 9 Text"
+                 name="./footerLink9Text"/>
+<footerLink9URL jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                fieldLabel="Footer Link 9 URL"
+                name="./footerLink9URL"/>
+ 
+<footerLink10Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 10 Text"
+                  name="./footerLink10Text"/>
+<footerLink10URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 10 URL"
+                 name="./footerLink10URL"/>
+ 
+<footerLink11Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 11 Text"
+                  name="./footerLink11Text"/>
+<footerLink11URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 11 URL"
+                 name="./footerLink11URL"/>
+ 
+<footerLink12Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 12 Text"
+                  name="./footerLink12Text"/>
+<footerLink12URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 12 URL"
+                 name="./footerLink12URL"/>
+ 
+<footerLink13Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 13 Text"
+                  name="./footerLink13Text"/>
+<footerLink13URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 13 URL"
+                 name="./footerLink13URL"/>
+ 
+<footerLink14Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 14 Text"
+                  name="./footerLink14Text"/>
+<footerLink14URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 14 URL"
+                 name="./footerLink14URL"/>
+ 
+<footerLink15Text jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Footer Link 15 Text"
+                  name="./footerLink15Text"/>
+<footerLink15URL jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./footerLink15URL"/>
+ 
+<FooterText jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title (e.g. Our brands)"
+                        name="./FooterText"/>
+<SocialImage jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image"
+                       name="./SocialImage"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."/>
+<!-- <getSocialLinkImage jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./getSocialLinkImage"/> -->
+<SocialImage1 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image1"
+                       name="./SocialImage1"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."/>
+<!-- <getSocialLinkImage1 jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./getSocialLinkImage1"/> -->
+ 
+<SocialImage2 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image2"
+                       name="./SocialImage2"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."/>
+ 
+<!-- <getSocialLinkImage2 jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./getSocialLinkImage2"/> -->
+<SocialImage3 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image1"
+                       name="./SocialImage3"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."/>
+<!-- <getSocialLinkImage3 jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./getSocialLinkImage3"/> -->
+<SocialImage4 jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                       fieldLabel="Main Logo Image1"
+                       name="./SocialImage4"
+                       rootPath="/content/dam"
+                       allowedPaths="/content/dam/.*\.(jpg|jpeg|png|gif|svg)$"
+                       validationMessage="Please select a valid image from DAM."/>
+ 
+<!-- <getSocialLinkImage4 jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                 fieldLabel="Footer Link 15 URL"
+                 name="./getSocialLinkImage4"/> -->
+                 
+                 </items>
+                 </column>
+ </items>
+    </content>
+</jcr:root>
+ 
+ 
