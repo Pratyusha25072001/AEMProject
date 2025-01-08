@@ -1,0 +1,115 @@
+<div class="client-stories">
+    <div class="client-stories2">
+        <h2>Recent client stories</h2>
+    </div>
+    <div class="story-container">
+        <div class="story-card">
+            <div class="story-image">
+                <img src="${properties.image}" alt="Image not found">
+            </div>
+            <div class="story-content">
+                <h2>${properties.title}</h2>
+                <p>${properties.description}</p>
+                <div class="button-containerxyz">
+                    <a href="https://www.capgemini.com" title="Read More">
+                        Read More
+                        <img src="https://www.capgemini.com/wp-content/plugins/cg-blocks/assets/images/icon-more-small-dark.svg"
+                             alt="Arrow Icon" style="width:16px;height:16px;margin-left:8px;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="story-container">
+        <div class="story-card">
+            <div class="story-image">
+                <img src="${properties.image2}" alt="Image not found">
+            </div>
+            <div class="story-content">
+                <h2>${properties.title2}</h2>
+                <p>${properties.description2}</p>
+                <div class="button-containerxyz">
+                    <a href="https://www.capgemini.com" title="Read More">
+                        Read More
+                        <img src="https://www.capgemini.com/wp-content/plugins/cg-blocks/assets/images/icon-more-small-dark.svg"
+                             alt="Arrow Icon" style="width:16px;height:16px;margin-left:8px;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="story-container">
+        <div class="story-card">
+            <div class="story-image">
+                <img src="${properties.image3}" alt="Image not found">
+            </div>
+            <div class="story-content">
+                <h2>${properties.title3}</h2>
+                <p>${properties.description3}</p>
+                <div class="button-containerxyz">
+                    <a href="https://www.capgemini.com" title="Read More">
+                        Read More
+                        <img src="https://www.capgemini.com/wp-content/plugins/cg-blocks/assets/images/icon-more-small-dark.svg"
+                             alt="Arrow Icon" style="width:16px;height:16px;margin-left:8px;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navigation">
+        <button class="prev" data-slide="prev">&lt;</button>
+        <div class="dots2">
+            <span class="dot1 active" data-slide="0"></span>
+            <span class="dot1" data-slide="1"></span>
+            <span class="dot1" data-slide="2"></span>
+        </div>
+        <button class="next" data-slide="next">&gt;</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".story-card");
+    const dots = document.querySelectorAll(".dot1");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    let currentIndex = 0;
+    const updateCarousel = (index) => {
+        
+        
+        slides.forEach((slide,i)=>{
+            slide.classList.toggle('active', i === index)
+        })
+        dots.forEach((dot,i)=>{
+            dot.classList.toggle('active', i === index)
+        })
+        console.log({slides,dots,prevButton,nextButton})
+
+        
+    };
+
+    prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel(currentIndex);
+    });
+
+    nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel(currentIndex);
+    });
+
+    dots.forEach((dot1, index) => {
+        dot1.addEventListener("click", () => {
+            currentIndex = index;
+            updateCarousel(currentIndex);
+        });
+    });
+
+    updateCarousel(currentIndex);
+});
+</script>
