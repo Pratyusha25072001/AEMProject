@@ -1,0 +1,87 @@
+<div class="slider">
+    <!-- Carousel Slides -->
+    <div class="slide active">
+        <div class="content">
+            <h1>${properties.title1}</h1>
+            <p>${properties.subtitle1}</p>
+            <button class="discover-btn">
+                Discover more
+                <span>→</span>
+            </button>
+        </div>
+        <div class="illustration">
+            <img src="${properties.image1}" alt="Slide 1">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>${properties.title2}</h1>
+            <p>${properties.subtitle2}</p>
+            <button class="discover-btn">
+                Learn more
+                <span>→</span>
+            </button>
+        </div>
+        <div class="illustration">
+            <img src="${properties.image2}" alt="Slide 2">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h1>${properties.title3}</h1>
+            <p>${properties.subtitle3}</p>
+            <button class="discover-btn">
+                Explore now
+                <span>→</span>
+            </button>
+        </div>
+        <div class="illustration">
+            <img src="${properties.image3}" alt="Slide 3">
+        </div>
+    </div>
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicator">
+        <span class="arrowprev">&lt;</span>
+        <div class="dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        <span class="arrownext">&gt;</span>
+    </div>
+</div>
+     
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevArrow = document.querySelector('.arrowprev');
+        const nextArrow = document.querySelector('.arrownext');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+        nextArrow.addEventListener('click', nextSlide);
+        prevArrow.addEventListener('click', prevSlide);
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                showSlide(currentIndex);
+            });
+        });
+        showSlide(currentIndex);
+    </script>
