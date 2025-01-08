@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+          jcr:primaryType="nt:unstructured" 
+          jcr:title="RCS Dialog" 
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    
+                    <title jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                           fieldLabel="Title" 
+                           name="./title"/>
+                    
+                    <description jcr:primaryType="nt:unstructured" 
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                 fieldLabel="Description" 
+                                 name="./description"/>
+                    
+                    <image jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser" 
+                           fieldLabel="Image" 
+                           name="./image"/>
+
+                           
+                    <title2 jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                           fieldLabel="Title2" 
+                           name="./title2"/>
+                    
+                    <description2 jcr:primaryType="nt:unstructured" 
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                 fieldLabel="Description2" 
+                                 name="./description2"/>
+                    
+                    <image2 jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser" 
+                           fieldLabel="Image2" 
+                           name="./image2"/>
+
+                           
+                    <title3 jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                           fieldLabel="Title3" 
+                           name="./title3"/>
+                    
+                    <description3 jcr:primaryType="nt:unstructured" 
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                 fieldLabel="Description3" 
+                                 name="./description3"/>
+                    
+                    <image3 jcr:primaryType="nt:unstructured" 
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser" 
+                           fieldLabel="Image3" 
+                           name="./image3"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

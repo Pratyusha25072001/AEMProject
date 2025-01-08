@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+          jcr:primaryType="nt:unstructured" 
+          jcr:title="Latest News Dialog" 
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    
+                    <headerTitle jcr:primaryType="nt:unstructured" 
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                 fieldLabel="Header Title" 
+                                 name="./headerTitle"/>
+
+                    
+                    <news1Title jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                fieldLabel="News 1 Title" 
+                                name="./news1Title"/>
+                    <news1Date jcr:primaryType="nt:unstructured" 
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                               fieldLabel="News 1 Date" 
+                               name="./news1Date"/>
+                    <tag1 jcr:primaryType="nt:unstructured" 
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                          fieldLabel="Tag 1" 
+                          name="./tag1"/>
+
+                        <btn1 jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                fieldLabel="ButtonText" 
+                                name="./btn1"/>
+
+                    
+                    <!-- <seeAllLink jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser" 
+                                fieldLabel="See All Link" 
+                                name="./seeAllLink"/> -->
+                    <!-- <seeAllIcon jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser" 
+                                fieldLabel="See All Icon" 
+                                name="./seeAllIcon"/> -->
+
+                    <news1Titlerighttop jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                fieldLabel="News 1 Title Right Top" 
+                                name="./news1Titlerighttop"/>
+                    <news1Daterighttop jcr:primaryType="nt:unstructured" 
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                               fieldLabel="News 1 Date Right Top" 
+                               name="./news1Daterighttop"/>
+                    <tag1righttop jcr:primaryType="nt:unstructured" 
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                          fieldLabel="Tag 1 Right Top" 
+                          name="./tag1righttop"/>
+
+                    
+                    <news1Titlerightcenter jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                fieldLabel="News 1 Title Right Center" 
+                                name="./news1Titlerightcenter"/>
+                    <news1Daterightcenter jcr:primaryType="nt:unstructured" 
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                               fieldLabel="News 1 Date Right Center" 
+                               name="./news1Daterightcenter"/>
+                    <tag1rightcenter jcr:primaryType="nt:unstructured" 
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                          fieldLabel="Tag 1 Right Center" 
+                          name="./tag1rightcenter"/>
+
+
+                    <news1Titlerightbottom jcr:primaryType="nt:unstructured" 
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                                fieldLabel="News 1 Title Right Bottom" 
+                                name="./news1Titlerightbottom"/>
+                    <news1Daterightbottom jcr:primaryType="nt:unstructured" 
+                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                               fieldLabel="News 1 Date Right Bottom" 
+                               name="./news1Daterightbottom"/>
+                    <tag1rightbottom jcr:primaryType="nt:unstructured" 
+                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield" 
+                          fieldLabel="Tag 1 Right Bottom" 
+                          name="./tag1rightbottom"/>
+
+
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
