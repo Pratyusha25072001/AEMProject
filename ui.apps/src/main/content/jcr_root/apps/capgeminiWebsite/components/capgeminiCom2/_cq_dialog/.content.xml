@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Custom Card"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+
+ <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured"> 
+                    <!-- <column
+                     jcr:primaryType="nt:unstructured"
+                     sling:resourceType="granite/ui/components/coral/foundation/container">
+                   <items jcr:primaryType="nt:unstructured"> -->
+
+               <blueCardTitle
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="Blue Card Title"
+              name="./blueCardTitle"
+              class="long" />
+
+               <blueCardSubtitle
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="Blue Card Subtitle"
+              name="./blueCardSubtitle"
+              class="long" />
+
+                 <blueCardButtonText
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="Blue Card Button Text"
+              name="./blueCardButtonText"
+              class="long" />
+
+               <fileReference jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                           fieldLabel="Image"
+                           name="./fileReference"
+                           class="long"/>
+
+                       <whiteCardLabel
+                    jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="White Card Label"
+              name="./whiteCardLabel"
+              class="long" />
+
+              <whiteCardTitle
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="White Card Title"
+              name="./whiteCardTitle"
+              class="long" />
+
+                <whiteCardLinkText
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+              fieldLabel="White Card Link Text"
+              name="./whiteCardLinkText"
+              class="long" />
+
+        </items>
+      </column>
+    </items>
+  </content>
+</jcr:root>
