@@ -1,0 +1,309 @@
+/* Main Slider Container */
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0078d7, #003f7d);
+    height: 60vh;
+    color: white;
+    padding: 50px;
+    position: relative;
+}
+
+/* Text Content */
+.content {
+    font-family: Ubuntu;
+    max-width: 180%;
+    width: 100%;
+}
+
+.content h1 {
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.content p {
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.discover-btn {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.discover-btn span {
+    font-family: Ubuntu;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.discover-btn:hover {
+    background: cyan;
+    color: black;
+    border: 2px transparent;
+}
+
+/* Illustration Placeholder */
+.illustration {
+    background: url(https://via.placeholder.com/600x400) no-repeat 50%;
+    background-size: cover;
+    border-radius: 10px;
+    height: 480px;
+    /* margin-left: 20%; */
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: translate(16%);
+    transform: translate(16%);
+    width: 2050px;
+}
+
+.illustration img {
+    height: 105%;
+    width: 84%;
+}
+
+/* Carousel Indicator */
+.carousel-indicator {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    height: 60px;
+    justify-content: center;
+    left: 40%;
+    position: absolute;
+    /* -webkit-transform: translateX(-50%); */
+    /* transform: translateX(-50%); */
+    width: 20%;
+}
+
+.arrowprev {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    height: 35px;
+    /* border: 2px solid red; */
+    width: 40px;
+    padding: 15px;
+}
+
+.arrownext {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    height: 35px;
+    /* border: 2px solid red; */
+    width: 40px;
+    padding: 14px;
+}
+
+.arrowprev:hover, .arrownext:hover {
+    background-color: #01d1d0;
+    border-radius: 50%;
+    
+    
+    
+}
+
+.dots {
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+    }
+
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.dot.active {
+    background-color: black;
+    transform: scale(1.2);
+}
+
+/* Add this CSS to the existing CSS */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0078d7, #003f7d);
+    height: 70vh;
+    color: white;
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    display: flex;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Smooth transition effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-indicator .arrowprev,.arrownext {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    font-size: x-large;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: black;
+    transform: scale(1.2);
+}
+
+
+/* Mobile View Styles */
+@media (max-width: 767px) {
+    .slider {
+        height: 550px;
+        margin-top: 10px;
+        padding: 20px;
+        width: 400px;
+    }
+
+    .slide {
+        flex-direction: column;
+        /* Stack elements vertically */
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 0px;
+    }
+
+    /* Adjust the illustration for mobile */
+    .illustration {
+        position: relative;
+        width: 123%;
+        /* Full width for the image container */
+        height: 45%;
+        /* Maintain aspect ratio */
+        bottom: 3%;
+        right: 26%;
+        order: 1;
+    }
+
+    .illustration img {
+        width: 100%;
+        /* Ensure the image fits the container */
+        height: 100%;
+        /* Maintain aspect ratio */
+        /* object-fit: cover; */
+        /* Prevent distortion */
+    }
+
+    .content {
+        order: 2;
+        width: 100%;
+        /* margin-top: 65%; */
+        margin-top: 20px;
+        text-align: left;
+    }
+
+
+    .content h1 {
+        font-size: 1.2rem;
+        /* padding-left: 40px; */
+        margin-left: 40px;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .discover-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .carousel-indicator {
+        width: 40%;
+        height: 50px;
+        bottom: 300px;
+        left: 125px;
+
+    }
+
+    .arrowprev, .arrownext {
+    }
+
+    .arrowprev:hover, .arrownext:hover {
+        background-color: #01d1d0;
+        border-radius: 50%;
+        height: 30px;
+        padding: 9px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
