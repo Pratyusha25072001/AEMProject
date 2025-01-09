@@ -1,0 +1,103 @@
+<cq:includeClientLib categories="header" />
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
+</head>
+
+<header>
+
+    <div class="top-bar">
+        <span><a href="#contact-us" class="underline-effect">Contact us</a></span>
+        <span><a href="#investors" class="underline-effect">Investors 
+            <i class="fa-solid fa-right-from-bracket"></i></a></span>
+        <span><a href="#global-en" class="underline-effect">Global | EN <i class="fa-solid fa-globe"></i></a></span>
+
+    </div>
+
+
+    <div id="maincontainer">
+        <nav>
+            <div class="logo">
+                <img loading="lazy"
+                    src="https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo-white.svg"
+                    alt="Capgemini"
+                    data-blue-logo-src="https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg"
+                    data-white-logo-src="https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo-white.svg">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#insights" class="underline-effect">Insights</a></li>
+                <li><a href="#industries" class="underline-effect">Industries</a></li>
+                <li><a href="#services" class="underline-effect">Services</a></li>
+                <li><a href="#careers" class="underline-effect">Careers</a></li>
+                <li><a href="#news" class="underline-effect">News</a></li>
+                <li><a href="#about-us" class="underline-effect">About us</a></li>
+            </ul>
+            <div class="search">
+                <a href="" class="search-text">
+                    <div id="search-text-desktop">Search<i class="fa-solid fa-magnifying-glass"></i></div>
+                </a>
+            </div>
+
+            <div id="all-mobile">
+                <div class="search">
+                    <a href="" class="search-text">
+                        <div id="search-text-mobile"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </a>
+                </div>
+                <div class="vertical-bar">|</div>
+                <div class="hamburger" id="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="x">X</div>
+            </div>
+
+        </nav>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="#insights">Insights</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li><hr>
+
+            <li><a href="#industries">Industries</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li><hr>
+
+            <li><a href="#services">Services</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li><hr>
+            
+            <li><a href="#careers">Careers</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li>
+            <hr>
+            <li><a href="#news">News</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li>
+            <hr>
+            <li><a href="#about-us">About us</a><i class="fa-solid fa-chevron-right arrow-icon"></i></li>
+            <hr>
+            Add these two links inside the dropdown 
+            <li><a href="https://investors.capgemini.com/en/" target="_blank" class="btn-link-investors"><span class="text">Investors</span></a></li>
+            <li><a href="/contact-us" class="btn-link-contact"><span class="text">Contact us</span></a></li> 
+        </ul>
+    </div>
+
+    
+</header>
+
+<!-- <script>
+    // Hamburger toggle functionality
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const x = document.getElementById('x');
+
+    // Toggle the dropdown and switch the hamburger to X
+    hamburgerIcon.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('active'); // Toggle dropdown visibility
+        x.classList.toggle('visible'); // Toggle visibility of X
+        hamburgerIcon.classList.toggle('visible'); // Toggle visibility of hamburger
+    });
+
+    // Close the dropdown when X is clicked
+    x.addEventListener('click', () => {
+        dropdownMenu.classList.remove('active'); // Hide dropdown
+        x.classList.remove('visible'); // Hide X symbol
+        hamburgerIcon.classList.toggle('visible'); // Show hamburger again
+    });
+
+</script> -->
