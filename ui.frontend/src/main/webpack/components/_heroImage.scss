@@ -1,0 +1,246 @@
+// .cmp-hero-image {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     padding: 2rem;
+//     background-color: #f4f4f4; // Fallback background color
+//     overflow: hidden;
+
+//     &__background {
+//         position: relative;
+//         width: 100vw; // Full viewport width
+//         margin: 0; // Remove any margin
+//         left: 0;
+//         right: 0;
+
+//         img {
+//             width: 100%;
+//             height: auto;
+//             object-fit: cover;
+//             display: block;
+//             // clip-path: inset(15% 0 15% 0); // Crop 10% from top and bottom
+//             // transform: translateY(-10%);
+//             // margin-top: -40px;
+//             position: relative;
+//             top: 48px;
+            
+//         }
+//     }
+
+//     .cmp-hero-image__rectangle {
+//         .rectangle-title {
+//             font-size: 37px; // Set to the desired font size
+//             font-weight: bold; // Optional: make the text bold
+//             padding-top: 5px;
+//             margin-bottom: 7px;
+//         }
+//         .rectangle-subtitle {
+//             font-size: 16px; 
+//             font-weight: normal; 
+//             margin-top: 0;
+//             padding-bottom: 24px;
+//         }
+//     }
+
+//     &__rectangle {
+//         position: absolute;
+//         top: 42%;  
+//         left: 4%;  
+//         width: 35vw; 
+//         height: 40vh; 
+//         // background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+//         background-image: linear-gradient(244deg, rgba(0, 123, 189, .9), rgba(0, 63, 97, .9));
+//         border-radius: 10px;
+//         padding: 20px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: flex-start;
+
+//         .rectangle-title {
+//             position: relative;
+//             color: white;
+//             // font-size: 100px;
+//             font-family: "Ubuntu", sans-serif;
+//             font-weight: bold;
+//             // margin-bottom: 5px;
+//             display: inline-block;
+//             z-index: 1;
+//             // padding-top: 10px;
+
+//              // Hover effect
+//              &::before {
+//                 content: "";
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 0;
+//                 width: 0%;
+//                 height: 100%;
+//                 background-color: rgb(71, 212, 212);
+//                 z-index: -1;
+//                 transition: width 0.3s ease-out;
+//             }
+
+//             @media (max-width: 900px) {
+//                 font-size: 2.5rem;
+//             }
+
+//             @media (min-width: 1024px) {
+//                 font-size: 3rem;
+//             }
+//         }
+
+//         .rectangle-subtitle {
+//             // font-size: 2px;
+//             font-family: "Ubuntu", sans-serif;
+//             // padding-top: -50px;
+//             // margin: 12px 0 0;
+//             // padding-left: 10px;
+//             color: white; 
+
+//             @media (min-width: 768px) {
+//                 font-size: 1.5rem;
+//             }
+
+//             @media (min-width: 1024px) {
+//                 font-size: 1.75rem;
+//             }
+
+//         }
+
+//         // Hover state for the transparent rectangle
+//         &:hover {
+//             .rectangle-title {
+//                 color: black; // Change text color
+//             }
+
+//             .rectangle-title::before {
+//                 width: 100%; // Animate the background expansion
+//             }
+//         }
+
+//         @media (max-width: 900px) {
+//             top: 60%;
+//             position: absolute;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             width: 40vw;
+//             height: auto;
+//             padding: 15px;
+//             align-items: center;
+//             text-align: center;
+    
+//             .rectangle-title {
+//                 font-size: 1.5rem;
+//             }
+    
+//             .rectangle-subtitle {
+//                 font-size: 1rem;
+//             }
+//         }
+
+        
+
+//         // @media (max-width: 750px) {
+//         //     top: 60%;
+//         //     left: 50%;
+//         //     transform: translate(-50%, -50%);
+//         //     width: 30vw;
+//         //     height: auto;
+//         //     padding: 15px;
+//         //     align-items: center;
+//         //     text-align: center;
+    
+//         //     .rectangle-title {
+//         //         font-size: 1rem;
+//         //     }
+    
+//         //     .rectangle-subtitle {
+//         //         font-size: 0.5rem;
+//         //     }
+//         // }
+//     }
+
+// }
+
+// css code -------------------------------------------------
+.cmp-hero-image {
+    position: relative;
+    width: 100%;
+    margin-top: 4.8vw;
+}
+
+.cmp-hero-image__background img {
+    width: 100%;
+    height: 500px; /* Matches the specified height in your CSS */
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+.cmp-hero-image__rectangle {
+    position: absolute;
+    top: 30%;
+    left: 3.6%;
+    width: 40vw;
+    height: 53.5vh;
+    background-image: linear-gradient(244deg, rgba(0, 123, 189, 0.9), rgba(0, 63, 97, 0.9));
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.rectangle-title {
+    position: relative;
+    color: white;
+    font-size: 37px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.rectangle-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 0%;
+    height: 100%;
+    background-color: rgb(71, 212, 212);
+    z-index: -1;
+    transition: width 0.3s ease-out;
+}
+
+.cmp-hero-image__rectangle:hover .rectangle-title::before {
+    width: 100%;
+}
+
+.cmp-hero-image__rectangle:hover .rectangle-title {
+    color: black;
+}
+
+.rectangle-subtitle {
+    color: white;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 12px 0 0;
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .cmp-hero-image__rectangle {
+        top: 25%;
+        left: 20vw;
+        width: 60vw;
+        align-self: center;
+    }
+}

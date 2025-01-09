@@ -1,0 +1,566 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: black;
+}
+
+/* Logo styling */
+.logo img {
+    width: 204px;
+    transition: width 0.3s ease;
+    padding-left: 27px;
+    content: url('https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo-white.svg');
+    /* Initially the white logo */
+}
+
+//D code 
+/* Add this to target the hamburger icon when the header is hovered */
+header:hover .hamburger span {
+    background-color: black; /* Change the color of the hamburger icon to black */
+}
+/* Change logo on hover */
+header:hover .logo img {
+    content: url('https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg');
+    /* Change to the original logo on hover */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensure the nav bar is above other content */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Top bar styling */
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    text-align: right;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: "ubuntu";
+    padding-top: 12px;
+    padding-right: 30px;
+}
+
+i {
+    padding-left: 6px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: #ffb600;
+    /* Highlight color on hover */
+    text-decoration-color: #00abfb;
+    /* Set the underline color to blue */
+    transition: all 1.5s ease;
+
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+    padding-bottom: 14px;
+}
+
+/* Logo styling */
+.logo img {
+    width: 204px;
+    transition: width 0.3s ease;
+    padding-left: 27px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 205px;
+    padding-right: 170px;
+}
+
+.nav-links li {
+    margin-left: 27.5px;
+}
+
+.nav-links a,
+.search a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: "Ubuntu";
+}
+
+
+/* Right-side icons (search + hamburger) */
+// .right-icons {
+//     display: flex;
+//     align-items: center;
+// }
+
+/* Search bar styling */
+// .search {
+//     display: flex;
+//     align-items: center;
+//     justify-self: end;
+//     padding-right: 36px;
+//     padding-top: 11px;
+//     /* change */
+//     margin-right: 10px;
+// }
+// D code
+#all-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em; // added
+}
+#all-mobile div { //added
+    /* padding: 0px 5rem; */
+}
+/* Hamburger styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Dropdown menu styling (hidden by default) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 0;
+}
+
+.dropdown-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+}
+#search-text-desktop{
+    padding-right: 25px;
+}
+.dropdown-menu.active {
+    display: block;
+}
+
+#alfa {
+    width: 40%;
+}
+
+#x {
+    color: black;
+    display: none;
+    
+    font-size: large;
+    cursor: pointer;
+}
+
+#x.visible {
+    display: block;
+    color: black;
+    
+    font-size: large;
+    cursor: pointer;
+}
+
+#hamburger-icon.visible {
+    display: none;
+}
+// upto this D
+/* newly added */
+.search a:hover {  
+    color: black;
+}
+/* Hover effect on entire header (top-bar + nav) */
+// header:hover {
+//     background-color: white;
+// }
+
+// D code
+/* Hover effect on entire header (top-bar + nav) */
+header:hover, header:hover .vertical-bar, header:hover #hamburger-icon {
+    background-color: white;
+    color: black;
+}
+
+header.scrolled {
+    background-color: blue;
+}
+
+header.scrolled {
+    background-color: white;
+    /* Change navbar background to white */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for the background color */
+}
+
+header.scrolled .logo img {
+    content: url('https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo.svg');
+    /* Change logo to the black one */
+}
+
+header.scrolled .top-bar,
+header.scrolled nav {
+    background-color: white;
+    /* Ensure the top bar and nav also change to white */
+}
+
+/* newly added */
+header.scrolled .top-bar{
+    display: none;
+}
+
+header.scrolled .top-bar a,
+header.scrolled .nav-links a,
+header.scrolled .nav-links i,
+header.scrolled .search a {
+    color: black;
+    /* Change all text to black */
+}
+
+header.scrolled .nav-links a:hover,
+header.scrolled .top-bar a:hover {
+    color: #2889bd;  
+    // comment change D
+    /* Change color on hover */
+}
+
+// header.scrolled #hamburger-icon{ comment change D
+//     color: black;
+// } 
+
+header:hover .top-bar,
+header:hover nav {
+    background-color: white;
+    /* Both sections change to white */
+}
+
+header:hover .top-bar a,
+header:hover .nav-links a,
+header:hover .nav-links i,
+header:hover .search a {
+    color: rgb(0, 0, 0);
+    /* Change all text to black when hovered */
+}
+
+header .nav-links a:hover,
+header .top-bar a:hover {
+    color: #2889bd;
+}
+
+header:hover .top-bar i {
+    color: black;
+}
+
+.underline-effect {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.underline-effect::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* background-color: #00abfb; */
+    background-color: #2889bd;
+    transition: width 0.3s ease-out;
+}
+
+.underline-effect:hover::before {
+    width: 100%;
+}
+
+
+
+/* For small screens like mobile */
+@media (max-width: 1200px) {
+
+    //D code 
+    /* Add this to target the hamburger icon when the header is hovered */
+    header:hover .hamburger span {
+    background-color: black; /* Change the color of the hamburger icon to black */
+    }
+    /* newly added */
+    header.scrolled .top-bar,
+    header.scrolled nav {
+        background-color: transparent;
+        /* Ensure the top bar and nav also change to white */
+        /* box-shadow: 0 4px 8px rgba(12, 10, 10, 0.1); /* Normal shadow with light opacity */
+        /* z-index: 1000;  */
+    }
+
+    header.scrolled .logo img {
+        content: url('https://www.capgemini.com/wp-content/themes/capgemini2020/assets/images/logo-white.svg');
+        /* Change logo to the black one */
+    }
+
+    /* newly added */
+    header.scrolled {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0));
+        /* Change navbar background to white */
+        transition: background-color 0.3s ease;      
+        /* Smooth transition for the background color */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);  */
+ 
+    }
+
+    /* newly added */
+    header.scrolled #search-text-mobile i{
+        color: white;
+    }
+
+    .top-bar {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+        display: none;
+    }
+
+    .logo img {
+        width: 170px;
+        padding-top: 17px;
+        /* change */
+        margin-left: 10px;
+        margin-right: 200px;
+    }
+    .nav-links {
+        /* flex-direction: column;
+        align-items: center;
+        margin-top: 10px; */
+        display: none;
+    }
+
+    /* .nav-links li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    } */
+
+    .search {
+        // margin-right: 10px;
+    }
+ 
+    .hamburger {
+        margin-left: 0; /* Reset any left margin of the hamburger */
+    }
+ 
+    // header { comment D
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     align-items: center;
+    // }
+
+    .vertical-bar {
+        display: inline-block;
+        color: white; /* Set color of vertical bar to black */
+        font-size: 20px; /* Adjust font size as needed */
+        margin: 0 8px; /* Space between search and hamburger */
+    }
+    /* newly added */
+    header.scrolled {
+        background-color: transparent;
+        /* Change navbar background to white */
+        transition: background-color 0.3s ease;      
+        /* Smooth transition for the background color */
+    }
+
+    /* newly added */
+    nav.scrolled{
+        background-color: transparent;
+    }
+
+    .search i {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #search-text-desktop {
+        display: none;
+    }
+
+    .arrow-icon {
+        color: black;
+        padding-right: 10px;
+    }
+
+    .dropdown-menu ul li a {
+        color: black;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .dropdown-menu ul li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .hamburger span {
+        height: 3px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    /* Hide the hamburger when the dropdown is open -- newly added*/
+    /* .dropdown-menu.open ~ .hamburger {
+        display: none;
+    } */
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px 0;
+        height: 900px;
+        overflow-y: auto; /* Enable vertical scrolling */
+        scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    .dropdown-menu ul li {
+        text-align: left;
+    }
+
+    .dropdown-menu ul li a {
+        padding-left: 20px;
+    }
+
+    /* Adjust horizontal rule styling (hr) */
+    .dropdown-menu hr {
+        margin: 2px 0;  /* Reduced margin to make the line closer to the text */
+        border: 0;
+        border-top: 1px solid #ccc;  /* Light border for the line */
+        width: 100%;  /* Make hr full width of the dropdown */
+    }
+
+     /* Styling for the buttons inside dropdown */
+     /* .btn-link-investors,
+     .btn-link-contact {
+         font-size: 1.125rem;
+         font-weight: 300;
+         line-height: 24px;
+         letter-spacing: .12px;
+         border: 1px solid #15011d;
+         display: inline-flex;
+         align-items: center;
+         justify-content: flex-start;
+         border-color: #15011d;
+         color: #15011d;
+         height: 48px;
+         padding: 0 1.5rem;
+         border-radius: 1.5rem;
+         margin-bottom: 10px;
+         text-decoration: none;
+         transition: all 0.3s ease;
+     } */
+
+     /* Hover effect for buttons inside dropdown */
+     /* .btn-link-investors:hover,
+     .btn-link-contact:hover {
+         background-color: #15011d;
+         color: white;
+         border-color: #15011d;
+     } */
+}
+
+/* Tablet and Desktop Screens */
+@media (min-width: 1200px) {
+    /* Add this to target the hamburger icon when the header is hovered */
+header:hover .hamburger span {
+    background-color: black; /* Change the color of the hamburger icon to black */
+}
+
+
+    .nav-links {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    #search-text-mobile {
+        display: none;
+    }
+
+    /* newly added */
+    .vertical-bar{
+        display: none;
+    }
+}
