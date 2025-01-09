@@ -1,0 +1,45 @@
+<!-- <div class="section2">
+
+    <h3 class="title">Latest Insights</h3>
+    <a href="genAI.html">
+        <div class="card">
+            <div class="card-img">
+                <img src="https://www.capgemini.com/wp-content/uploads/2024/05/Generative-AI-in-cybersecurity_2880X1800.jpg?w=2048&quality=70"
+                    alt="Generative AI in Cybersecurity" class="card-images">
+            </div>
+            <div class="card-content">
+                <div class="manager-container">
+                    <div class="institute">
+                        <p> - Capgemini Research Institute</p>
+                    </div>
+                    <a href="#" class="heading">Generative AI in Cybersecurity</a>
+                </div>
+                <div class="cta">
+                    <p>CAPGEMINI RESEARCH INSTITUTE</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div> -->
+
+<div class="section2">
+    <h3 class="title">Latest Insights</h3>
+    <!-- <a href="${properties.link @ context='uri'}"> -->
+        <div class="card">
+            <div class="card-img">
+                <img src="${properties.image @ context='uri'}" alt="Latest Insights" class="card-images">
+            </div>
+            <div class="card-content">
+                <div class="manager-container">
+                    <div class="institute">
+                        <p>${properties.institute}</p>
+                    </div>
+                    <a href="https://www.capgemini.com/insights/research-library/generative-ai-in-cybersecurity/" class="heading">${properties.heading}</a>
+                </div>
+                <div class="cta">
+                    <p>${properties.cta}</p>
+                </div>
+            </div>
+        </div>
+    <!-- </a> -->
+</div>

@@ -1,0 +1,194 @@
+.section2 {
+    padding: 5vw 6vw;
+    background-color: white;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 107%;
+
+}
+
+.card-img {
+    margin-left: -5%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 947px;
+    height: 429px;
+    transition: transform 0.5s ease;
+    border-radius: 0px 0 0 0px;
+}
+
+.card-img img:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    width: 37%;
+    height: 324px;
+    margin-top: 2.5%;
+    margin-left: 47%;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0 0px 0px 0;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card-content a {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Ubuntu';
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 1.7vw;
+    color: #333;
+    padding-left: 1.6vw;
+    /* background: linear-gradient(to right, #00E6E3, #00E6E3); */
+    /* Solid blue gradient */
+    background-size: 0% 100%;
+    /* Start with 0% width */
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.5s ease;
+    /* Smooth transition */
+}
+
+.heading:hover {
+    background-size: 100% 100%;
+    /* Expand background width to full */
+    color: black;
+    /* Optional: Change text color for visibility */
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: rgb(5, 111, 172);
+    font-family: 'Ubuntu';
+    font-weight: 500;
+
+}
+
+.institute p {
+    color: black;
+    margin-top: -8pc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.manager-container a {
+    text-decoration: none;
+
+    padding-top: 20px;
+}
+
+.heading {
+    margin-top: 30px;
+}
+
+.cta {
+    font-size: 0.9rem;
+    color: blue;
+    font-family: 'Ubuntu';
+    margin-top: 71px;
+    margin-bottom: -76px;
+}
+
+@media (max-width: 1024px){
+    .card {
+        flex-direction: column;
+        /* Stack content vertically */
+    }
+}
+
+@media(max-width: 768px){
+    .card-content {
+        padding: 10px;
+        width: 78%;
+        height: 200px;
+        margin-top: 45%;
+        margin-left: -4px;
+
+    }
+
+    .card-img img {
+        height: 97%;
+        width: 95%;
+    }
+
+    .card-content h4 {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        flex-direction: column;
+        /* Stack content vertically */
+    }
+
+    .cta {
+        font-size: 0.9rem;
+        color: blue;
+        font-family: 'Ubuntu';
+        margin-top: 0px;
+        margin-bottom: -114px;
+    }
+}
+
+@media (max-width:480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .card-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .card-content {
+        width: 78%;
+        height: 11rem;
+        margin-top: 45%;
+        margin-left: -1%;
+    }
+
+    .card-content p {
+        font-size: 0.8rem;
+    }
+
+    .cta {
+        font-size: 0.9rem;
+        color: blue;
+        font-family: 'Ubuntu';
+        margin-top: 9px;
+        margin-bottom: -132px;
+    }
+
+    .card {
+        flex-direction: column;
+        /* Stack content vertically */
+    }
+
+
+}
